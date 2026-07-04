@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paras Yadav — Data Scientist & Data Analyst Portfolio</title>
+  <meta name="description" content="Award-winning digital portfolio of Paras Yadav, a Data Science student and Data Analyst. Highlighting skills in Python, SQL, PostgreSQL, Pandas, and interactive analytics.">
+  
+  <!-- Font share CDN & styling sheet link -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="preloader-top">
+      <span class="text-mono">Paras Yadav / Portfolio</span>
+      <span class="text-mono">Initiating Digital Insights</span>
+    </div>
+    <div class="preloader-center">
+      <h2 class="preloader-title">Data Architect &amp; Scientist</h2>
+    </div>
+    <div class="preloader-bottom">
+      <span class="text-mono">Systems Online</span>
+      <div class="preloader-counter">00</div>
+    </div>
+  </div>
+
+  <!-- Custom Morphing Cursor -->
+  <div id="custom-cursor"></div>
+  <div id="custom-cursor-follower"><span>Explore</span></div>
+
+  <!-- Background Lines (Awwwards Design) -->
+  <div class="grid-lines">
+    <div class="grid-line"></div>
+    <div class="grid-line"></div>
+    <div class="grid-line"></div>
+    <div class="grid-line"></div>
+  </div>
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- Transparent Sticky Header -->
+  <header>
+    <a href="#" class="logo cursor-hover-tag" data-cursor-text="Home">PARAS<span>.</span></a>
+    <nav>
+      <a href="#about" class="nav-link cursor-hover-tag" data-cursor-text="About">/about</a>
+      <a href="#expertise" class="nav-link cursor-hover-tag" data-cursor-text="Skills">/expertise</a>
+      <a href="#experience" class="nav-link cursor-hover-tag" data-cursor-text="History">/experience</a>
+      <a href="#projects" class="nav-link cursor-hover-tag" data-cursor-text="Works">/projects</a>
+      <a href="#contact" class="nav-link cursor-hover-tag" data-cursor-text="Reach">/contact</a>
+    </nav>
+  </header>
+
+  <!-- Interactive Scroll Progress Bar -->
+  <div style="position: fixed; top: 0; left: 0; height: 3px; background: var(--color-accent); z-index: 1001; width: 0%; transition: width 0.1s linear;" id="scroll-progress"></div>
+
+  <!-- Main Website Container -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="bg-canvas-container">
+        <canvas id="hero-particles"></canvas>
+      </div>
+      <div class="container hero-content">
+        <span class="text-mono hero-mono">Data Science &amp; Analysis</span>
+        <div class="hero-title-container">
+          <h1 class="hero-title" id="hero-reveal-1">I don't just</h1>
+        </div>
+        <div class="hero-title-container">
+          <h1 class="hero-title" id="hero-reveal-2" style="color: var(--color-accent)">analyze data.</h1>
+        </div>
+        <div class="hero-title-container">
+          <h1 class="hero-title" id="hero-reveal-3">I shape stories.</h1>
+        </div>
+        <p class="hero-subheading">
+          B.Tech Computer Science student specializing in Data Science. Harnessing the power of Python, SQL, and PostgreSQL to transform raw complexity into luxury digital intelligence.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary cursor-hover-tag" data-cursor-text="Open">Explore Projects</a>
+          <a href="./Paras_Yadav_Resume.pdf" download class="btn btn-secondary cursor-hover-tag" data-cursor-text="Download">Download Resume</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll Down</span>
+        <div class="mouse-icon">
+          <div class="mouse-wheel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+      <div class="container">
+        <span class="section-tag text-mono">01 // Identity</span>
+        <div class="about-grid">
+          <div class="about-info-column">
+            <h2 class="section-title">Bridging data science <span>&amp; creative execution.</span></h2>
+            <div class="about-text">
+              <p>
+                I am Paras Yadav, a Data Science enthusiast currently pursuing my B.Tech in Computer Science Engineering (Data Science) at CGC Landran. My core expertise lies in designing database architectures, performing deep-dive exploratory data analysis, and architecting data visualizations.
+              </p>
+              <p>
+                I focus on writing optimized database schemas, writing complex window functions and CTEs in PostgreSQL, and cleaning unstructured datasets with Pandas and NumPy. I bring data models to life through high-fidelity visual representations.
+              </p>
+            </div>
+            
+            <div class="about-stats">
+              <div class="stat-item">
+                <div class="stat-number">02+</div>
+                <div class="stat-label">Years Learning</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Data Projects</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">30+</div>
+                <div class="stat-label">SQL Joins &amp; CTEs</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Clean Code</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-image-column">
+            <div class="about-image-wrapper">
+              <div class="about-image-inner">
+                <img src="./avatar_mesh.png" alt="Paras Yadav Abstract Mesh Avatar" class="cursor-hover-tag" data-cursor-text="View Profile">
+                <div class="image-overlay-glow"></div>
+              </div>
+              <div class="image-frame-decoration"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise">
+      <div class="container">
+        <span class="section-tag text-mono">02 // Capabilities</span>
+        <h2 class="section-title">My Technical <span>Ecosystem.</span></h2>
+        
+        <div class="skills-creative-visual">
+          <div class="skills-category">
+            <h3>Programming &amp; Databases</h3>
+            <div class="skills-tags">
+              <span class="skill-tag data-skill">Python</span>
+              <span class="skill-tag data-skill">SQL</span>
+              <span class="skill-tag data-skill">PostgreSQL</span>
+              <span class="skill-tag">Database Design</span>
+              <span class="skill-tag">SQL Joins</span>
+              <span class="skill-tag">Window Functions</span>
+              <span class="skill-tag">CTEs &amp; Subqueries</span>
+              <span class="skill-tag">pgAdmin</span>
+            </div>
+          </div>
+          
+          <div class="skills-category">
+            <h3>Data Analytics &amp; Tools</h3>
+            <div class="skills-tags">
+              <span class="skill-tag data-skill">Pandas</span>
+              <span class="skill-tag data-skill">NumPy</span>
+              <span class="skill-tag">Matplotlib</span>
+              <span class="skill-tag">Seaborn</span>
+              <span class="skill-tag">EDA</span>
+              <span class="skill-tag">Data Cleaning</span>
+              <span class="skill-tag">Git &amp; GitHub</span>
+              <span class="skill-tag">Jupyter / VS Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience">
+      <div class="container">
+        <span class="section-tag text-mono">03 // Path</span>
+        <h2 class="section-title">Education &amp; <span>Milestones.</span></h2>
+        
+        <div class="timeline-container">
+          <div class="timeline-line">
+            <div class="timeline-line-glow"></div>
+          </div>
+          
+          <!-- Milestone 1 -->
+          <div class="timeline-item">
+            <div class="timeline-year-sticky">2028</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="timeline-title">B.Tech in Computer Science Engineering (Data Science)</h3>
+                  <div class="timeline-org">CGC Landran, Mohali</div>
+                </div>
+                <span class="timeline-period">Expected July 2028</span>
+              </div>
+              <div class="timeline-desc">
+                <p>Acquiring advanced foundations in object-oriented programming, data structures, linear algebra, statistics, and machine learning pipelines. Specializing in analytical structures and database design schemas.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 2 -->
+          <div class="timeline-item">
+            <div class="timeline-year-sticky">2025</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="timeline-title">Relational Database &amp; Data Pipeline Architecture</h3>
+                  <div class="timeline-org">Self-Directed Systems</div>
+                </div>
+                <span class="timeline-period">Ongoing</span>
+              </div>
+              <div class="timeline-desc">
+                <p>Pioneering normalization strategies and data ingestion processes. Designed normalized schemas for educational databases and mapped funding cycles of global corporate startups.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 3 -->
+          <div class="timeline-item">
+            <div class="timeline-year-sticky">2024</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="timeline-title">Exploratory Data Analysis Projects</h3>
+                  <div class="timeline-org">Data Science Initiatives</div>
+                </div>
+                <span class="timeline-period">Initial Work</span>
+              </div>
+              <div class="timeline-desc">
+                <ul>
+                  <li>Processed and cleaned diverse sports datasets (IPL cricket stats) and entertainment ratings (Anime catalogs).</li>
+                  <li>Created statistical visualization panels in Python using Matplotlib and Seaborn, extracting key density highlights and correlation maps.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <span class="section-tag text-mono">04 // Creations</span>
+        <h2 class="section-title">Selected <span>Case Studies.</span></h2>
+        
+        <div class="projects-container">
+          
+          <!-- Project 1 -->
+          <div class="project-item">
+            <div class="project-image-column">
+              <div class="project-image-wrapper cursor-hover-tag" data-cursor-text="Explore">
+                <img src="./project_db_system.png" alt="Database Management System Schema Artwork">
+              </div>
+            </div>
+            <div class="project-info-column">
+              <span class="project-num">/ PROJECT 01</span>
+              <h3 class="project-title">PostgreSQL Student System</h3>
+              <p class="project-desc">
+                A highly normalized, multi-entity relational schema spanning students, enrollments, course catalogs, performance marks, and attendance schedules. Features optimal primary/foreign key configurations and constraints.
+              </p>
+              <div class="project-meta-grid">
+                <div class="project-meta-item">
+                  <span class="project-meta-label">Role</span>
+                  <span class="project-meta-value">Database Architect</span>
+                </div>
+                <div class="project-meta-item">
+                  <span class="project-meta-label">Year</span>
+                  <span class="project-meta-value">2025</span>
+                </div>
+                <div class="project-meta-item">
+                  <span class="project-meta-label">Core Tech</span>
+                  <div class="project-tech">
+                    <span>PostgreSQL</span>
+                    <span>SQL</span>
+                    <span>pgAdmin</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://github.com/paras4151/postgresql-student-management-system" target="_blank" class="btn btn-secondary cursor-hover-tag" data-cursor-text="GitHub">View Source</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-item">
+            <div class="project-image-column">
+              <div class="project-image-wrapper cursor-hover-tag" data-cursor-text="Explore">
+                <img src="./project_unicorn.png" alt="Unicorn Startups Data Visualization">
+              </div>
+            </div>
+            <div class="project-info-column">
+              <span class="project-num">/ PROJECT 02</span>
+              <h3 class="project-title">Unicorn Startup Analysis</h3>
+              <p class="project-desc">
+                Exploratory data analysis of global unicorn startups. Cleaned missing variables and resolved formatting inconsistencies in Python, executing multi-dimensional analytics to extract geographical valuation shifts and funding trends.
+              </p>
+              <div class="project-meta-grid">
+                <div class="project-meta-item">
+                  <span class="project-meta-label">Role</span>
+                  <span class="project-meta-value">Data Analyst</span>
+                </div>
+                <div class="project-meta-item">
+                  <span class="project-meta-label">Year</span>
+                  <span class="project-meta-value">2025</span>
+                </div>
+                <div class="project-meta-item">
+                  <span class="project-meta-label">Core Tech</span>
+                  <div class="project-tech">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Matplotlib</span>
+                    <span>Seaborn</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://github.com/paras4151/unicorn-startup-analysis" target="_blank" class="btn btn-secondary cursor-hover-tag" data-cursor-text="GitHub">View Source</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-item">
+            <div class="project-image-column">
+              <div class="project-image-wrapper cursor-hover-tag" data-cursor-text="Explore">
+                <img src="./project_ipl.png" alt="Cricket IPL Analytics Panels">
+              </div>
+            </div>
+            <div class="project-info-column">
+              <span class="project-num">/ PROJECT 03</span>
+              <h3 class="project-title">Cricket IPL Analytics</h3>
+              <p class="project-desc">
+                Cleaned and aggregated longitudinal IPL match indices. Built statistical panels modeling match results, run trends, and player consistency vectors, yielding clear historical league conclusions.
+              </p>
+              <div class="project-meta-grid">
+                <div class="project-meta-item">
+                  <span class="project-meta-label">Role</span>
+                  <span class="project-meta-value">Data Analyst</span>
+                </div>
+                <div class="project-meta-item">
+                  <span class="project-meta-label">Year</span>
+                  <span class="project-meta-value">2024</span>
+                </div>
+                <div class="project-meta-item">
+                  <span class="project-meta-label">Core Tech</span>
+                  <div class="project-tech">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Seaborn</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://github.com/paras4151/ipl-data-analysis" target="_blank" class="btn btn-secondary cursor-hover-tag" data-cursor-text="GitHub">View Source</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-item">
+            <div class="project-image-column">
+              <div class="project-image-wrapper cursor-hover-tag" data-cursor-text="Explore">
+                <img src="./project_anime.png" alt="Anime Catalog Rating Distribution Graph">
+              </div>
+            </div>
+            <div class="project-info-column">
+              <span class="project-num">/ PROJECT 04</span>
+              <h3 class="project-title">Anime Dataset Analysis</h3>
+              <p class="project-desc">
+                Analyzed rating systems and popularity behaviors across an expansive media catalog. Structured genre categorizations and investigated statistical distributions connecting production value, rating indices, and viewer volume.
+              </p>
+              <div class="project-meta-grid">
+                <div class="project-meta-item">
+                  <span class="project-meta-label">Role</span>
+                  <span class="project-meta-value">Data Analyst</span>
+                </div>
+                <div class="project-meta-item">
+                  <span class="project-meta-label">Year</span>
+                  <span class="project-meta-value">2024</span>
+                </div>
+                <div class="project-meta-item">
+                  <span class="project-meta-label">Core Tech</span>
+                  <div class="project-tech">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>NumPy</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://github.com/paras4151/anime-dataset-analysis" target="_blank" class="btn btn-secondary cursor-hover-tag" data-cursor-text="GitHub">View Source</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Visualization: Interactive Orbit System -->
+    <section id="skills-ecosystem">
+      <div class="container">
+        <span class="section-tag text-mono">05 // Synergy</span>
+        <h2 class="section-title">Interactive Skill <span>Ecosystem.</span></h2>
+        <p class="text-muted" style="max-width: 600px; margin-bottom: 2rem;">
+          Hover or drag across the outer orbits. Node connections map the architecture of Python-based extraction feeding into SQL schemas and analytical reports.
+        </p>
+        
+        <div class="skills-orbit-container cursor-hover-drag-tag" data-cursor-text="Drag Orbit">
+          
+          <div class="orbit-center-node">
+            <h4>DATA<br>SCIENCE</h4>
+          </div>
+          
+          <!-- Orbit Rings -->
+          <div class="orbit-ring orbit-ring-1"></div>
+          <div class="orbit-ring orbit-ring-2"></div>
+          
+          <!-- Orbit Nodes (Inner Ring 1) -->
+          <div class="orbiting-node cursor-hover-tag" data-cursor-text="Core" style="top: 50%; left: calc(50% - 140px);" data-angle="180" data-radius="140">
+            <svg style="width:24px; height:24px" viewBox="0 0 24 24"><path fill="var(--color-accent)" d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4M12,18A2,2 0 0,1 10,20A2,2 0 0,1 8,18A2,2 0 0,1 10,16A2,2 0 0,1 12,18Z"/></svg>
+            <span class="orbit-node-label">Python</span>
+          </div>
+          <div class="orbiting-node cursor-hover-tag" data-cursor-text="Database" style="top: 50%; left: calc(50% + 140px);" data-angle="0" data-radius="140">
+            <svg style="width:24px; height:24px" viewBox="0 0 24 24"><path fill="var(--color-accent)" d="M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z"/></svg>
+            <span class="orbit-node-label">PostgreSQL</span>
+          </div>
+          
+          <!-- Orbit Nodes (Outer Ring 2) -->
+          <div class="orbiting-node cursor-hover-tag" data-cursor-text="Library" style="top: calc(50% - 240px); left: 50%;" data-angle="270" data-radius="240">
+            <svg style="width:24px; height:24px" viewBox="0 0 24 24"><path fill="var(--color-data-blue)" d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M9 17H7V10H9V17M13 17H11V7H13V17M17 17H15V12H17V17Z"/></svg>
+            <span class="orbit-node-label">Pandas / NumPy</span>
+          </div>
+          <div class="orbiting-node cursor-hover-tag" data-cursor-text="Visualization" style="top: calc(50% + 240px); left: 50%;" data-angle="90" data-radius="240">
+            <svg style="width:24px; height:24px" viewBox="0 0 24 24"><path fill="var(--color-data-blue)" d="M16 11.78L20.22 16L18.8 17.41L14.59 13.2L11.78 16L6 10.22L7.41 8.8L11.78 13.17L14.59 10.37L16 11.78M2 19V5H4V17H20V19H2Z"/></svg>
+            <span class="orbit-node-label">Matplotlib / Seaborn</span>
+          </div>
+          <div class="orbiting-node cursor-hover-tag" data-cursor-text="Control" style="top: calc(50% - 170px); left: calc(50% - 170px);" data-angle="225" data-radius="240">
+            <svg style="width:24px; height:24px" viewBox="0 0 24 24"><path fill="var(--color-text-primary)" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.4 6,9.5 6.63,8.8C6.53,8.55 6.18,7.5 6.73,6.15C6.73,6.15 7.58,5.88 9.5,7.17C10.3,6.95 11.18,6.84 12,6.84C12.82,6.84 13.7,6.95 14.5,7.17C16.42,5.88 17.27,6.15 17.27,6.15C17.82,7.5 17.47,8.55 17.37,8.8C18,9.5 18.38,10.4 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"/></svg>
+            <span class="orbit-node-label">Git / GitHub</span>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Services / Key Focus Competencies -->
+    <section id="services">
+      <div class="container">
+        <span class="section-tag text-mono">06 // Focus</span>
+        <h2 class="section-title">Core Competencies <span>&amp; Services.</span></h2>
+        
+        <div class="services-grid">
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <h3>Database Architecture</h3>
+            <p>
+              Designing and implementing normalized relational database structures in PostgreSQL. Drafting secure tables, schemas, views, primary/foreign key relations, and indexing configurations to guarantee sub-millisecond execution speeds.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M3 3v18h18M18.7 8l-5.1 5.2-2.8-2.7L7 14.3" />
+              </svg>
+            </div>
+            <h3>Exploratory Analytics</h3>
+            <p>
+              Parsing raw datasets to extract critical patterns, handle anomalies, and filter statistical outliers in Python using Pandas, NumPy, and Scipy. Bridging commercial numbers with statistical truth.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+              </svg>
+            </div>
+            <h3>Premium Data Viz</h3>
+            <p>
+              Building analytical dashboards and high-fidelity reporting plots using Matplotlib and Seaborn. Blending data aesthetics with clear presentation to instantly reveal organizational highlights to decision makers.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section: Infinite Marquee -->
+    <section id="testimonials" style="min-height: auto; padding: 6rem 0;">
+      <div class="container" style="padding: 0 4rem;">
+        <span class="section-tag text-mono">07 // Endorsements</span>
+        <h2 class="section-title">Peer <span>Evaluations.</span></h2>
+      </div>
+      
+      <div class="testimonials-marquee">
+        <div class="marquee-track">
+          
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              Paras consistently demonstrates an outstanding grasp of relational database architectures. His Student Management System implementation displays structural integrity far beyond academic expectations.
+            </p>
+            <div class="testimonial-author">
+              <span class="testimonial-name">Academic Evaluator</span>
+              <span class="testimonial-role">CGC Landran Systems</span>
+            </div>
+          </div>
+          
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              The Startup Unicorn Analysis delivered clear, actionable insights backed by highly robust, clean code. Paras handles complex data cleaning tasks in Python with impressive speed and precision.
+            </p>
+            <div class="testimonial-author">
+              <span class="testimonial-name">Project Collaborator</span>
+              <span class="testimonial-role">Open Source Data Initiative</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              His analytical plots don't just display raw numbers; they establish narrative structure. The IPL and Anime case studies show a strong talent for visual data storytelling.
+            </p>
+            <div class="testimonial-author">
+              <span class="testimonial-name">Senior Peer Developer</span>
+              <span class="testimonial-role">Data Engineering Group</span>
+            </div>
+          </div>
+
+          <!-- Repeat for Infinite Loop -->
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              Paras consistently demonstrates an outstanding grasp of relational database architectures. His Student Management System implementation displays structural integrity far beyond academic expectations.
+            </p>
+            <div class="testimonial-author">
+              <span class="testimonial-name">Academic Evaluator</span>
+              <span class="testimonial-role">CGC Landran Systems</span>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              The Startup Unicorn Analysis delivered clear, actionable insights backed by highly robust, clean code. Paras handles complex data cleaning tasks in Python with impressive speed and precision.
+            </p>
+            <div class="testimonial-author">
+              <span class="testimonial-name">Project Collaborator</span>
+              <span class="testimonial-role">Open Source Data Initiative</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              His analytical plots don't just display raw numbers; they establish narrative structure. The IPL and Anime case studies show a strong talent for visual data storytelling.
+            </p>
+            <div class="testimonial-author">
+              <span class="testimonial-name">Senior Peer Developer</span>
+              <span class="testimonial-role">Data Engineering Group</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <span class="section-tag text-mono">08 // Connection</span>
+        <h2 class="section-title">Let's create <span>something amazing.</span></h2>
+        
+        <div class="contact-grid">
+          <div class="contact-info-column">
+            <p class="contact-statement">
+              Seeking Data Analyst or Data Science internships where I can apply my analytical skills and help organizations build data pipelines.
+            </p>
+            <div class="contact-details-list">
+              <div class="contact-detail-item">
+                <span class="contact-detail-label">Location</span>
+                <span class="contact-detail-link">Mohali, India</span>
+              </div>
+              <div class="contact-detail-item">
+                <span class="contact-detail-label">Write Me</span>
+                <a href="mailto:parasyadav4151@gmail.com" class="contact-detail-link cursor-hover-tag" data-cursor-text="Mail">parasyadav4151@gmail.com</a>
+              </div>
+              <div class="contact-detail-item">
+                <span class="contact-detail-label">Call Me</span>
+                <a href="tel:+917496967575" class="contact-detail-link cursor-hover-tag" data-cursor-text="Call">+91 7496967575</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form-column">
+            <form id="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully (Mock)!');">
+              <div class="form-group">
+                <input type="text" id="form-name" class="form-input" placeholder=" " required>
+                <label for="form-name" class="form-label">Your Name</label>
+              </div>
+              <div class="form-group">
+                <input type="email" id="form-email" class="form-input" placeholder=" " required>
+                <label for="form-email" class="form-label">Your Email</label>
+              </div>
+              <div class="form-group">
+                <textarea id="form-message" class="form-input" placeholder=" " required></textarea>
+                <label for="form-message" class="form-label">Project Details / Message</label>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-primary cursor-hover-tag" data-cursor-text="Submit" style="border:none;">Send Transmission</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <h2 class="footer-huge-text">
+          <span>Let's build</span>
+          <span style="color: var(--color-accent)">something amazing.</span>
+        </h2>
+      </div>
+      <div class="footer-bottom">
+        <div class="copyright">
+          &copy; 2026 Paras Yadav. All rights reserved. Crafted as a Premium Data Science Interface.
+        </div>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/paras-yadav-331a6435a" target="_blank" class="social-link cursor-hover-tag" data-cursor-text="LinkedIn">LinkedIn</a>
+          <a href="https://github.com/paras4151" target="_blank" class="social-link cursor-hover-tag" data-cursor-text="GitHub">GitHub</a>
+          <a href="mailto:parasyadav4151@gmail.com" class="social-link cursor-hover-tag" data-cursor-text="Email">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Import GSAP, ScrollTrigger, Lenis and SplitType from CDNs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+
+  <!-- Import JS Logic -->
+  <script src="./main.js"></script>
+</body>
+</html>
